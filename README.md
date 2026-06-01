@@ -1,8 +1,8 @@
-# Robustness and Explainability of Lightweight Vision Transformers for Federated Chest X‑ray Classification under Non‑IID Client Distributions — Thesis + Publication Plan
+# Robustness, Explainability, and Attribution Stability of Lightweight Vision Transformers for Federated Chest X‑ray Classification under Non‑IID Client Distributions — Thesis + Publication Plan
 
 This repository contains the **thesis plan**, **paper plan**, and **execution checklists** for the project:
 
-> **Robustness and Explainability of Lightweight Vision Transformers for Federated Chest X‑ray Classification under Non‑IID Client Distributions**
+> **Robustness, Explainability, and Attribution Stability of Lightweight Vision Transformers for Federated Chest X‑ray Classification under Non‑IID Client Distributions**
 
 ## Confirmed experimental focus (as of 2026-05-23)
 - Modality/Dataset: **NIH ChestX-ray14**
@@ -25,4 +25,3 @@ This repository contains the **thesis plan**, **paper plan**, and **execution ch
 - Use **“Chest X‑ray”** (with the hyphen) consistently in the thesis/paper.
 - Use **“Non‑IID”** (capitalization and hyphen) consistently.
 - Use **“DeiT‑Tiny”** (with hyphen) consistently.
-
