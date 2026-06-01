@@ -1,14 +1,14 @@
 # Paper Outline (submission-ready)
 
 ## Title (final)
-Robustness and Explainability of Lightweight Vision Transformers for Federated Chest X‑ray Classification under Non‑IID Client Distributions
+Robustness, Explainability, and Attribution Stability of Lightweight Vision Transformers for Federated Chest X‑ray Classification under Non‑IID Client Distributions
 
 ## Abstract
 - 4–6 sentences: problem, method, setup, key results, takeaway
 
 ## 1. Introduction
 - Motivation: cross-hospital data silos, Non‑IID
-- Need: robustness + explainability
+- Need: robustness + explainability + attribution stability
 - Contributions (bullets)
 
 ## 2. Related Work
@@ -18,11 +18,11 @@ Robustness and Explainability of Lightweight Vision Transformers for Federated C
 - Explainability methods
 
 ## 3. Method
-- Models (ResNet-18, DeiT-Tiny)
+- Models (ResNet-18, DeiT‑Tiny)
 - FL algorithms (FedAvg, FedProx)
 - Non‑IID partition
 - Robustness test (noisy labels)
-- Explainability pipeline
+- Explainability pipeline + attribution stability metric
 
 ## 4. Experimental Setup
 - Dataset description
