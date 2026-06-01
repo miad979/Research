@@ -1,5 +1,7 @@
 # Thesis Plan (Literature Review → Experiments → Publication)
 
+**Project title (final)**: **Robustness and Explainability of Lightweight Vision Transformers for Federated Chest X‑ray Classification under Non‑IID Client Distributions**
+
 Date: 2026-05-23
 
 ## 0) Confirmed scope (frozen unless revised)
@@ -54,4 +56,3 @@ Use `docs/literature-review-outline.md`.
 - Submission-ready paper PDF (`docs/paper-outline.md`)
 - Reproducible code + split scripts
 - Figures/tables for Non-IID, robustness, XAI stability
-
