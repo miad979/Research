@@ -1,6 +1,6 @@
 # Thesis Plan (Literature Review → Experiments → Publication)
 
-**Project title (final)**: **Robustness and Explainability of Lightweight Vision Transformers for Federated Chest X‑ray Classification under Non‑IID Client Distributions**
+**Project title (final)**: **Robustness, Explainability, and Attribution Stability of Lightweight Vision Transformers for Federated Chest X‑ray Classification under Non‑IID Client Distributions**
 
 Date: 2026-05-23
 
@@ -12,13 +12,14 @@ Date: 2026-05-23
 - **Baselines**: centralized, local-only, FedAvg, FedProx
 - **Models**: DeiT-Tiny (lightweight ViT) + ResNet-18 baseline
 - **Robustness stress test**: noisy labels on 1–2 clients
-- **Explainability**: Grad-CAM (CNN) + transformer attribution + stability/consistency metric
+- **Explainability**: Grad-CAM (CNN) + transformer attribution + stability/consistency metric + attribution stability
 
 ## 1) Research questions (adapt as needed)
 - **RQ1 (Non-IID)**: How does Non-IID severity affect FL performance for effusion classification?
 - **RQ2 (Robustness)**: Does FedProx (vs FedAvg) improve robustness under Non-IID and noisy labels?
 - **RQ3 (Explainability)**: Are explanations stable across clients and across rounds? How does Non-IID affect interpretability?
-- **RQ4 (Lightweight ViTs)**: Can lightweight ViTs match/beat CNN baselines in FL with comparable compute/communication?
+- **RQ4 (Attribution stability)**: How stable are attribution maps across FL rounds and across clients for DeiT-Tiny vs ResNet-18?
+- **RQ5 (Lightweight ViTs)**: Can lightweight ViTs match/beat CNN baselines in FL with comparable compute/communication?
 
 ## 2) Chapter structure
 ### Chapter 1 — Introduction
@@ -36,7 +37,7 @@ Use `docs/literature-review-outline.md`.
 - Models and training (ResNet-18, DeiT-Tiny)
 - FL algorithms (FedAvg, FedProx)
 - Robustness test design (noisy labels)
-- Explainability pipeline
+- Explainability pipeline + attribution stability metric
 
 ### Chapter 4 — Experiments & Results
 - Main metrics + confidence intervals
@@ -44,6 +45,7 @@ Use `docs/literature-review-outline.md`.
 - FedAvg vs FedProx comparison
 - Robustness (noisy labels)
 - Explainability quantitative analysis + visual examples
+- Attribution stability analysis (across rounds / across clients)
 
 ### Chapter 5 — Discussion
 - tradeoffs, limitations, ethics/privacy clarity
