@@ -1,8 +1,8 @@
-# Robust & Explainable Federated Learning with Lightweight Vision Transformers (Non‑IID) — Thesis + Publication Plan
+# Robustness and Explainability of Lightweight Vision Transformers for Federated Chest X‑ray Classification under Non‑IID Client Distributions — Thesis + Publication Plan
 
 This repository contains the **thesis plan**, **paper plan**, and **execution checklists** for the project:
 
-> **Robust and Explainable Federated Learning under Non‑IID Data Distributions with Lightweight Vision Transformers for Medical Image Classification**
+> **Robustness and Explainability of Lightweight Vision Transformers for Federated Chest X‑ray Classification under Non‑IID Client Distributions**
 
 Confirmed experimental focus (as of 2026-05-23):
 - Modality/Dataset: **NIH ChestX-ray14**
