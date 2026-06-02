@@ -39,10 +39,30 @@
 - ResNet: Grad-CAM
 - DeiT: attention rollout / transformer attribution
 
-## 8) Explainability quantitative metric (choose 1 primary)
-- Explanation stability across rounds (e.g., similarity of attribution maps)
-- Explanation consistency across clients
-- Deletion/insertion score (if implemented)
+## 8) Attribution stability (primary quantitative XAI metric)
+Define and report *attribution stability* in a way that is comparable across rounds and clients.
+
+### 8.1) Attribution map generation (fixed across all experiments)
+- Compute attribution maps on a fixed evaluation subset (e.g., 200 images sampled once and held fixed).
+- Use the same preprocessing, target class, and normalization for all rounds.
+- Normalize attribution maps to [0, 1] per image.
+
+### 8.2) Stability across rounds (temporal stability)
+For each image and each client/model, compute similarity between attribution maps at two rounds (e.g., r and r+Δ).
+- Choose Δ (recommended): 5 or 10 rounds.
+- Similarity metric (pick 1 primary):
+  - **SSIM** on normalized maps, or
+  - **Spearman rank correlation** on flattened maps.
+Report mean ± std over images, and plot stability vs round.
+
+### 8.3) Consistency across clients (cross-site consistency)
+For a fixed global round r*, compare attribution maps across clients for the same fixed evaluation subset.
+- Report average pairwise similarity (same similarity metric as 8.2).
+- Also report dispersion (std / IQR) to show heterogeneity.
+
+### 8.4) Thresholded-region overlap (optional secondary)
+- Threshold attribution maps at top-k% mass (e.g., k = 10%).
+- Compute IoU overlap across rounds/clients.
 
 ## 9) Metrics
 - Primary: AUC (preferred in medical classification)
@@ -55,5 +75,7 @@
 - Global performance vs rounds (FedAvg vs FedProx)
 - Performance vs α severity
 - Robustness (noise) table
-- XAI qualitative examples + quantitative stability table
+- XAI qualitative examples + **attribution stability** table/plots:
+  - Stability vs rounds (Δ fixed)
+  - Consistency across clients at round r*
 
